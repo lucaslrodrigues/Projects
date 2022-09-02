@@ -1,2 +1,2 @@
-# Python_projets
-Projetos feitos em python para exercitar a lógica
+# Projetos próprios para estudos
+Projetos feitos em varias linguagens para exercitar a lógica, aprendizado e curiosidade.
