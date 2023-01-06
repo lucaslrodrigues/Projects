@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="boxes">
+
+        <div class="box">
+        
+            <h3>Controle de gastos</h3>
+            <div>
+                Quanto você recebe? <input id="salary_ipt" oninput="simulateEssentialSpent()" placeholder="R$1000.00">
+                <br><span id="view_area_window1"></span>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Simule o montante de seus investimentos</h2>
+            
+            <h3>Taxa 100% do CDI atual: <b id="cdiNow"></b>%</h3>
+
+            <label>Quanto você pretende investir por mês?</label><input type="text" id="investValue_ipt"><br>
+
+            <ul>
+                <label class="txtCheck">Forma de analize:</label>
+                <div  class="checkAnalytic">
+                    <li>
+                        <label>Anual <input type="radio" name="checkRadio" value="0" onclick="year()"></label>
+                    </li>
+                    <li>
+                        <label>Mensal <input type="radio" name="checkRadio" value="1" onclick="month()" checked></label>
+                    </li>
+                    <li>
+                        <label>Diária <input type="radio" name="checkRadio" value="2" onclick="day()"></label>
+                    </li>
+                </div>
+            </ul>
+            <div>
+                <br>Por <label id="timeLabel"></label>
+            </div>
+            <br><input type="text" id="time_ipt">
+
+            <br>Taxa <label id="rateLabel"></label> <input type="text" id="rateValue">
+            <button onclick="simulateInvest()">Simular investimento</button>
+            
+            <div class="investValues">
+                <span id="view_area_window2_1"></span>
+                <span id="view_area_window2_2"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
