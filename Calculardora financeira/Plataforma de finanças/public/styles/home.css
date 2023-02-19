@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+header {
+    background-color: #042474;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+header .container, header .container div{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+}
+
+header li button{
+    font-size: 15px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 3px 15px;
+}
+header li .cad_button{
+    transition: 0.3s ease;
+}
+
+header li .cad_button:hover{
+    background-color: white;
+    color: #042474;
+}
+
+.logo {
+    width:10%;
+}
+
+.logotipo {
+    width:30%;
+}
+/* Corpo */
+
+.right_side li{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    background-image: url(assets/Slide1.jpg);
+    background-size: cover;
+    background-position: 0px;
+}
+
+section .container{
+    display: flex;
+}
+
+.left_side, .right_side{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 85vh;
+}
+
+.left_side {
+    justify-content: center;
+}
+
+.left_side img{
+    width: 300px;
+}
+
+.right_side{
+    justify-content: center;
+}
+
+.right_side .content{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+}
+
+.right_side .login, .right_side .password{
+    width: 50%;
+    margin: auto;
+}
+
+.right_side .login input, .right_side .password input{
+    transition: 0.3s ease;
+}
+
+.right_side input:hover{
+    transition: 0.2s;
+    transform:scale(1.02)
+}
+
+.right_side li span{
+    display: flex;
+}
+
+.right_side li button{
+    border-radius: 30px;
+    padding: 3px 15px;
+    background-color: transparent;
+    border: solid 2px #042474;
+    color: #042474;
+    transition: 0.3s ease;
+}
+
+.right_side li button:hover{
+    transition: 0.2s;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.245);
+    background-color: #042474;
+    color: white;
+}
+
+.right_side li input{
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.right_side li input{
+    background-color: #042474;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.right_side .enter {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.right_side .enter span{
+    align-self: center;
+}
+
+.right_side .enter a {
+    text-decoration: none;
+    color:#042474
+}
+
+.right_side .enter a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* For cellphone */
+
+@media (max-width: 700px){
+    header{
+        height: 10vh;
+    }
+    header button span{
+        font-size: 12px;
+    }
+    .right_side{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 85vh;
+    }
+    .right_side .content{
+        height: 40%; 
+    }
+    .left_side {
+        display: none;
+    }
+    .logo {
+        width: 30px;
+    }
+    .logotipo {
+        width: 90px;
+    }
+}
